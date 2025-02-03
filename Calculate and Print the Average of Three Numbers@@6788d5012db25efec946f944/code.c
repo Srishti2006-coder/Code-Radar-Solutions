@@ -4,10 +4,10 @@ int main() {
     int a;
     int b;
     int c;
-    scanf("%.2f", &a);
-    scanf("%.2f", &b);
-    scanf("%.2f", &c);
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
     int average = a + b + c / 3;
-    printf("%Average: %f", average);
+    printf("%Average: %d", average);
     return 0;
 }
