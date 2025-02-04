@@ -8,7 +8,11 @@ int main() {
     if (a>b && b<0){
         printf("Positive");
     }
-    else if(a<b && b>0 || a){
-        printf("Negative")
+    else if(a<b && b>0 ){
+        printf("Negative");
     }
+    else{
+        printf("zero");
+    }
+    return 0;
 }
