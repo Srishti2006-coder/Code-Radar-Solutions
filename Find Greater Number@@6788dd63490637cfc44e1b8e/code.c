@@ -6,10 +6,10 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     if(a>b){
-        printf("10");
+        printf("the number is greater");
     }
     else{
-        printf("15");
+        printf("10");
     }
     return 0;
 }
