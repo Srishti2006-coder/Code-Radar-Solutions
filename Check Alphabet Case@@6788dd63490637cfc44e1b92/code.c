@@ -2,7 +2,7 @@
 
 int main() {
     char alphabet;
-    scanf("%c", &alphabet);
+    scanf("%ch", &alphabet);
     if (alphabet>='a' && alphabet<='z' ){
         printf("Lowercase");
     }
