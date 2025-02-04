@@ -9,5 +9,8 @@ int main() {
     else if (ch<='A' && ch>='Z'){
         printf("Lowecase");
     }
+    else{
+        printf("Default case");
+    }
     return 0;
 }
