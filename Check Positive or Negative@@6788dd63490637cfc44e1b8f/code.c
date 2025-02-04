@@ -2,17 +2,15 @@
 
 int main() {
     int a;
-    int b;
     scanf("%d", &a);
-    scanf("%d", &b);
-    if (a>b && b<0){
+    if (a>0){
         printf("Positive");
     }
-    else if(a<b && b>0 ){
+    else if(b<0){
         printf("Negative");
     }
     else{
-        printf("Positive");
+        printf("Zero");
     }
     return 0;
 }
