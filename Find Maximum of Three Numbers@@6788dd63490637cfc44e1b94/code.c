@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     if (a>b) {
-        printf("%d", a);
+        printf("The maximum of two numbers : %d", a);
     }
     else {
         printf("%d", b);
