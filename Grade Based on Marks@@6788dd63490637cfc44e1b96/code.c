@@ -17,6 +17,6 @@ int main() {
     }
     else  (marks < 60){
         printf("F");
-    }
+    
     return 0;
 }
