@@ -8,9 +8,6 @@ int main() {
     if (a>b) {
         printf("%d", a);
     }
-    else if (a<b){
-        printf("%d", b);
-    }
     else{
         printf("Both numbers are equal");
     }
