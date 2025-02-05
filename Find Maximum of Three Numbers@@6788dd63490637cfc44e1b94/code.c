@@ -6,10 +6,10 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     if (a>b) {
-        printf("maximum number");
+        printf("%d", a);
     }
     else {
-        printf("not maximum number");
+        printf("%d", b);
     }
     return 0;
 }
