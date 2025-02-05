@@ -9,5 +9,8 @@ int main(){
    else if (alphabet>'a' && alphabet<'z'){
        printf("Consonant");
    }
+   else {
+    printf("Not valid");
+   }
    return 0;
 }
