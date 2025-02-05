@@ -6,10 +6,13 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     if (a>b) {
-        printf("The maximum of two number : %d", a);
+        printf("%d", a);
     }
-    else {
-        printf("The maximum of two number : %d", b);
+    else if (a<b){
+        printf("%d", b);
+    }
+    else{
+        printf("Both numbers are equal");
     }
     return 0;
 }
