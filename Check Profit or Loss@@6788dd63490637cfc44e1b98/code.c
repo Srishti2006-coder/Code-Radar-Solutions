@@ -2,7 +2,7 @@
 
 int main(){
     int costprice;
-    int selllingprice;
+    int sellingprice;
     scanf("%d", &costprice);
     scanf("%d", &sellingprice);
     if (sellingprice > costprice) {
