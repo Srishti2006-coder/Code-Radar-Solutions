@@ -3,11 +3,11 @@
 int main(){
     char type;
     scanf("%d", &type);
-    if(char=='a' || char=='e'|| char='i'|| char='o'||char='u'){
+    if(type=='a' || type=='e'|| type='i'|| type='o'|| type='u'){
         printf("Vowel");
     }
-   else{
-    printf("consonant")
+   else if (alphabet>'a' && alphabet<'z'){
+       printf("Consonant");
    }
    return 0;
 }
