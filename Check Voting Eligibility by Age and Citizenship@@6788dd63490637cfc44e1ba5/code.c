@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int a;
-    int b;
-    if (a>=18 && b==1){
+    int age;
+    int citizen;
+    if (age>=18 && citizen==1){
         printf("Eligible");
     }
     else{
