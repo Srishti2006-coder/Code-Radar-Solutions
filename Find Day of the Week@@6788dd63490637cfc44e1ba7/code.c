@@ -18,7 +18,7 @@ int main(){
         break;
         case 7 : printf("sunday \n");
         break;
-        default "printf("Not a valid day");
+        default : printf("Inavlid");
         return 0;
     }
 }
