@@ -4,7 +4,7 @@ int main() {
     char type;
     scanf("%ch", &type);
     if (type=='R'){
-        printf("stop");
+        printf("Stop");
     }
     else if (type=='G'){
         printf("Go");
