@@ -12,10 +12,10 @@ int main() {
     else if (type=='C') {
         printf("Average");
     }
-    else if (type=="D") {
+    else if (type=='D') {
         printf("Below Average");
     }
-    else if (type=="F") {
+    else if (type=='F') {
         printf("Fail");
     }
     else {
