@@ -1,20 +1,15 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 int main() {
-    int n;
-    
-    // Input the number of rows
-    scanf("%d", &n);
-
-    // Loop to print the inverted triangle
-    for (int i = n; i >= 1; i--) {
-        for (int j = 1; j <= i; j++) {
-            printf("*");
+    int s;
+    scanf("%d", &s);
+    int i,j;
+    for (int i = s; i >= 1; i--) {
+        for (int j = 1; j <= i; j++)
+         {
+            printf("%c", '*');
         }
-        printf("\n");  // Move to the next line after each row
-    }
+        printf("\n");  
 
     return 0;
 }
