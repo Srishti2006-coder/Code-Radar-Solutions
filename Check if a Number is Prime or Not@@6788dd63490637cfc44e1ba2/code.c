@@ -17,14 +17,13 @@ int main() {
     int num;
 
     // Input from user
-    printf("prime");
     scanf("%d", &num);
 
     // Check if the number is prime
     if (isPrime(num)) {
-        printf("%d is a prime number.\n", num);
+        printf("Prime");
     } else {
-        printf("%d is not a prime number.\n", num);
+        printf("Not Prime");
     }
 
     return 0;
