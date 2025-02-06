@@ -4,19 +4,19 @@ int main(){
     int day;
     scanf("%d", &day );
     switch(day) {
-        case 1 : printf("monday \n");
+        case 1 : printf("Monday \n");
         break;
-        case 2 : printf("tuesday \n");
+        case 2 : printf("Tuesday \n");
         break;
-        case 3 : printf("wednesday \n");
+        case 3 : printf("Wednesday \n");
         break;
-        case 4 : printf("thurday \n");
+        case 4 : printf("Thurday \n");
         break;
-        case 5 : printf("friday \n");
+        case 5 : printf("Friday \n");
         break;
-        case 6 : printf("saturday \n");
+        case 6 : printf("Saturday \n");
         break;
-        case 7 : printf("sunday \n");
+        case 7 : printf("Sunday \n");
         break;
         default : printf("Inavlid");
         return 0;
