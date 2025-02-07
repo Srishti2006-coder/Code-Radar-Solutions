@@ -5,9 +5,10 @@ int main (){
     scanf("%d", &n);
     int i,j;
     for(i = 1; i<=n; i++){
+        char '*';
     for (j = 1; j<=i; j++)
         {
-            printf("%d", n);
+            printf("%d", '*');
         }
         printf("\n");
     }
