@@ -18,6 +18,18 @@ void printMirrorRightAngledTriangle(int N) {
         printf("\n");
     }
 }
+int main() {
+    int N;
+
+    // Get the number of rows from the user
+    printf("Enter the number of rows: ");
+    scanf("%d", &N);
+
+    // Call the function to print the triangle
+    printMirrorRightAngledTriangle(N);
+
+    return 0;
+}
 
 
 
