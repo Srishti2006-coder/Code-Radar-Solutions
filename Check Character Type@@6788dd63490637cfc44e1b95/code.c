@@ -3,14 +3,19 @@
 int main(){
     char type;
     scanf("%d", &type);
-    if(type=='a' || type=='e'|| type='i'|| type='o'|| type='u'){
-        printf("Vowel");
+   if (n>='A' && n<='Z' || n>='a' && n<='z'){
+    if (type=='a' || type=='e' || type=='o'|| type=='u ||type=='i'){
+        printf("Vowel")
     }
-   else if (alphabet>'a' && alphabet<'z'){
-       printf("Consonant");
-   }
-   else {
-    printf("Not valid");
+    else if(type=='A' || type=='E'|| type=='O'||type=='I'|| type=='U'){
+        printf("Consonant");
+    }
+    else if(n>='0' && n<='9'){
+        printf("Digit");
+    }
+    else{
+        printf("Special  Character");
+    }
    }
    return 0;
 }
