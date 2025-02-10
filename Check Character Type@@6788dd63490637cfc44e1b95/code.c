@@ -2,12 +2,12 @@
 
 int main(){
     char n;
-    scanf("%d", &n);
+    scanf("%c", &n);
     if (n>='A' && n<='Z' || n>='a' && n<='z'){
-    if (type=='a' || type=='e' || type=='o'|| type=='u' ||type=='i'){
+    if (n=='a' || n=='e' || n=='o'|| n=='u' ||n=='i'){
         printf("Vowel");
     }
-    else if(type=='A' || type=='E'|| type=='O'||type=='I'|| type=='U'){
+    else if(n=='A' || n=='E'|| n=='O'||n=='I'|| n=='U'){
         printf("Consonant");
     }}
     else if(n>='0' && n<='9'){
