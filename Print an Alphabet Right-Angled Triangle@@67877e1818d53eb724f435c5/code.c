@@ -4,7 +4,14 @@ int main(){
     int n;
     scanf("%d", &n);
     int i,j;
-    char ch = 'A';
-    'A' = 1;
-    for ()
+    for (i=1; i<=n; i++){
+        char ch = 'A';
+        'A'= 1;
+        for(j=1; j<=i; j++){
+            printf("%c ", 'A');
+            'A'++
+        }
+        printf("\n");
+    }
+    return 0;
 }
