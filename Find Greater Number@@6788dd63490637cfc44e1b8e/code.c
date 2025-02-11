@@ -6,10 +6,10 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     if(a>b){
-        printf("The number is greater");
+        printf("greater integer");
     }
     else if(a<b){
-        printf("The number is greater");
+        printf("not greater integer");
     }
     else{
         printf("Both numbers are equal");
