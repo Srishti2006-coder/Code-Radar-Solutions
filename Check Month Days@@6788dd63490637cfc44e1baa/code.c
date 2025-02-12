@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int month;
-    scanf("%d", &month);
-    switch (month) {
-        case 1: printf("January \n");
+    int days;
+    scanf("%d", &days);
+    switch (days) {
+        case 1: printf("31 \n");
         break;
         case 2 : printf("February \n");
         break;
