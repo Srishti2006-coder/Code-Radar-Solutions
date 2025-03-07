@@ -1,35 +1,18 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
-void printMirrorRightAngledTriangle(int N) {
-    for (int i = 1; i <= N; i++) {
-        // Print spaces
-        for (int j = 1; j <= N - i; j++) {
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i,j,k;
+    for(i=1;i<=n;i++){
+        for(k=1;k<=n-i;k++){
             printf(" ");
         }
-        
-        // Print stars
-        for (int j = 1; j <= i; j++) {
-            printf("*");
+        for(j=1;j<=i;j++){
+            printf("%c",'*');
         }
-        
-        // Move to the next line
         printf("\n");
     }
-}
-int main() {
-    int N;
-
-    // Get the number of rows from the user
-    printf("Enter the number of rows: ");
-    scanf("%d", &N);
-
-    // Call the function to print the triangle
-    printMirrorRightAngledTriangle(N);
-
     return 0;
 }
-
-
-
