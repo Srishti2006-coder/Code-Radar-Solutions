@@ -16,10 +16,7 @@ int main() {
     int num;
 
     // Input decimal number
-    printf("Enter a decimal number: ");
     scanf("%d", &num);
-
-    printf("Binary representation: ");
     decimalToBinary(num);
 
     return 0;
