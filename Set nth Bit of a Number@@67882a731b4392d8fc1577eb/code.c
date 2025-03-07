@@ -14,7 +14,7 @@ int main() {
 
     // Set the nth bit
     int result = setNthBit(num, n);
-    printf(" %d\n", n, result);
+    printf("%d %d\n", n, result);
 
     return 0;
 }
