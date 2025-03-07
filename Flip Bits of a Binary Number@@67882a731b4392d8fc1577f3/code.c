@@ -16,7 +16,6 @@ int main() {
     int num;
 
     // Input the integer number
-    printf("Enter a decimal number: ");
     scanf("%d", &num);
 
     // Perform bitwise NOT operation
