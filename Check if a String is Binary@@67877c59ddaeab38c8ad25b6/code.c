@@ -1,19 +1,21 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
     char str[1000];
-    int i = 0, isBinary = 1;
+    int isBinary = 1;
 
-    // Read the input string
-    scanf("%s", str);
+    // Read entire line (to include spaces, if any)
+    scanf(" %[^\n]", str); // notice the space before % to skip leading whitespace
 
-    while (str[i] != '\0') {
+    for (int i = 0; str[i] != '\0'; i++) {
+        // Skip spaces if allowed
+        if (str[i] == ' ')
+            continue;
+
         if (str[i] != '0' && str[i] != '1') {
             isBinary = 0;
             break;
         }
-        i++;
     }
 
     if (isBinary)
@@ -23,3 +25,4 @@ int main() {
 
     return 0;
 }
+
