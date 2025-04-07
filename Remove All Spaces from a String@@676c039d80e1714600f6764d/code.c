@@ -1,33 +1,35 @@
 // Your code here...
-// Your code here...
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    char str[200], longest[200];
-    int i = 0, start = 0, maxLen = 0;
+    char str[200];
+    int i = 0, j = 0;
 
+    // Read the string with spaces
     fgets(str, sizeof(str), stdin);
 
-    // Remove newline if present
-    str[strcspn(str, "\n")] = '\0';
-
-    while (1) {
-        if (str[i] == ' ' || str[i] == '\0') {
-            int len = i - start;
-            if (len > maxLen) {
-                maxLen = len;
-                strncpy(longest, &str[start], len);
-                longest[len] = '\0';
-            }
-            start = i + 1;
+    // Remove newline character if present
+    while (str[i] != '\0') {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+            break;
         }
-
-        if (str[i] == '\0') break;
         i++;
     }
 
-    printf("%s\n", longest);
+    // Remove all spaces
+    i = 0;
+    while (str[i] != '\0') {
+        if (str[i] != ' ') {
+            str[j++] = str[i];
+        }
+        i++;
+    }
+
+    str[j] = '\0';  // Null-terminate the final string
+
+    // Output the result
+    printf("%s\n", str);
 
     return 0;
 }
