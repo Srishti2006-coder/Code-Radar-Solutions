@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,4 +29,11 @@ int main() {
         int diff = abs(arr[i + 1] - arr[i]);
         if (diff < minDiff) {
             minDiff = diff;
-            first = arr[i
+            first = arr[i];
+            second = arr[i + 1];
+        }
+    }
+
+    printf("%d %d\n", first, second);
+    return 0;
+}
