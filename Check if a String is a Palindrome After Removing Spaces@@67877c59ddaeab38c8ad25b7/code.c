@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -10,11 +9,11 @@ int main() {
     // Remove newline character if present
     str[strcspn(str, "\n")] = '\0';
 
-    // Remove spaces and store in cleaned[]
+    // Remove spaces and convert to lowercase
     int j = 0;
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] != ' ') {
-            cleaned[j++] = str[i];
+            cleaned[j++] = tolower(str[i]);
         }
     }
     cleaned[j] = '\0';
