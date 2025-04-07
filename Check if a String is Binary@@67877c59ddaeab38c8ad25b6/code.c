@@ -18,8 +18,8 @@ int main() {
 
     if (isBinary)
         printf("Yes\n");
-    // else
-    //     printf("No\n");
+    else
+        printf("No\n");
 
     return 0;
 }
