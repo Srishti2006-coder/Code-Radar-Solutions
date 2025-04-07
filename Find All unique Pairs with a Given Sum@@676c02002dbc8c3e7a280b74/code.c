@@ -11,18 +11,17 @@ int main() {
 
     scanf("%d", &target);
 
-    // 2D array to track printed pairs up to 100
-    int printed[101][101] = {0};
+    // 2D array to track printed pairs (assuming values are within 0-100)
+    int printed[201][201] = {0}; // use 201 to allow negative numbers if needed (adjust as required)
 
     for (int i = 0; i < n; i++) {
-        for (int j = i; j < n; j++) {  // include i==j for pairs like 3 3
+        for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == target) {
                 int a = arr[i] < arr[j] ? arr[i] : arr[j];
                 int b = arr[i] > arr[j] ? arr[i] : arr[j];
-                if (arr[i] == arr[j]) a = b = arr[i];  // handle same number
-                if (!printed[a][b]) {
+                if (!printed[a + 100][b + 100]) { // offset by 100 to handle negative indices
                     printf("%d %d\n", a, b);
-                    printed[a][b] = 1;
+                    printed[a + 100][b + 100] = 1;
                 }
             }
         }
@@ -30,5 +29,6 @@ int main() {
 
     return 0;
 }
+
 
 
