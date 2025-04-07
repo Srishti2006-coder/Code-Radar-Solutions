@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
@@ -22,4 +21,11 @@ int main() {
                 int b = arr[i] > arr[j] ? arr[i] : arr[j];
                 if (!printed[a * 1000 + b]) {
                     printf("%d %d\n", a, b);
-                    printed[a * 1000*
+                    printed[a * 1000 + b] = 1;
+                }
+            }
+        }
+    }
+
+    return 0;
+}
