@@ -10,7 +10,7 @@ int main() {
        // printf("Please enter a positive integer.\n");
         return 1;
     }
-    printf("The sum of the first %d natural numbers (", N);
+   // printf("The sum of the first %d natural numbers (", N);
     for (i = 1; i <= N; i++) {
         printf("%d", i);
         if (i < N) {
