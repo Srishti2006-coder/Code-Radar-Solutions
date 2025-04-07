@@ -11,23 +11,18 @@ int main() {
 
     scanf("%d", &target);
 
-    // Loop to find unique pairs
+    // 2D array to track printed pairs up to 100
+    int printed[101][101] = {0};
+
     for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
+        for (int j = i; j < n; j++) {  // include i==j for pairs like 3 3
             if (arr[i] + arr[j] == target) {
-                // Check if this pair was already printed
-                int already_printed = 0;
-                for (int k = 0; k < i; k++) {
-                    if ((arr[k] == arr[i] && arr[k + 1] == arr[j]) ||
-                        (arr[k] == arr[j] && arr[k + 1] == arr[i])) {
-                        already_printed = 1;
-                        break;
-                    }
-                }
-                if (!already_printed) {
-                    int a = arr[i] < arr[j] ? arr[i] : arr[j];
-                    int b = arr[i] > arr[j] ? arr[i] : arr[j];
+                int a = arr[i] < arr[j] ? arr[i] : arr[j];
+                int b = arr[i] > arr[j] ? arr[i] : arr[j];
+                if (arr[i] == arr[j]) a = b = arr[i];  // handle same number
+                if (!printed[a][b]) {
                     printf("%d %d\n", a, b);
+                    printed[a][b] = 1;
                 }
             }
         }
@@ -35,4 +30,5 @@ int main() {
 
     return 0;
 }
+
 
