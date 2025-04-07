@@ -20,7 +20,7 @@ int main() {
     }
 
     // Output the result
-    printf("The sum of the first %d natural numbers is: %d\n", N, sum);
+    printf("%d\n", N, sum);
 
     return 0;
 }
