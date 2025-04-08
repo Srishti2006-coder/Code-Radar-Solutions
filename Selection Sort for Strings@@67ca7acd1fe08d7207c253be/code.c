@@ -1,7 +1,7 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 
+// Implement missing functions here
 void selectionSort(char arr[][100], int n) {
     for (int i = 0; i < n - 1; i++) {
         int minIdx = i;
@@ -25,23 +25,18 @@ void printArray(char arr[][100], int n) {
     }
 }
 
+// Keep the original main() provided by the platform
 int main() {
     int n;
-
-    // Read the number of strings
     scanf("%d", &n);
-    char arr[n][100];  // Array of strings with max length 100
+    char arr[n][100];
 
-    // Read each string from input
     for (int i = 0; i < n; i++) {
         scanf("%s", arr[i]);
     }
 
-    // Call the selectionSort function
     selectionSort(arr, n);
-
-    // Print the sorted array of strings
     printArray(arr, n);
-
     return 0;
 }
+
